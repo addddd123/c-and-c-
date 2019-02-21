@@ -1,0 +1,24 @@
+#include<conio.h>
+#include<iostream.h>
+
+class ad{
+      public:
+      int a;
+      void f();
+      };
+   inline void ad::f()
+      {
+      if(a%2==0)
+      cout<<"even";
+      else
+      cout<<"odd";
+      }
+      void main()
+      {
+      clrscr();
+      ad obj;
+      int ad::*p=&ad::a;
+      cin>>obj.*p;
+      obj.f();
+      getch();
+      }

@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+#include<graphics.h>
+int main()
+{
+	int gd=DETECT ,gm;
+	INITGRAPH(&gd,&gm,"c:/tc/bgi");
+	line(20,20,20,200);
+	getche();
+	return 0;
+	
+}

@@ -1,0 +1,77 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int i,j,m,n,p,k,q;
+int a[50][50],b[50][50],c[50][50];
+clrscr();
+printf("ENTER SIZE OF MATRIX A\t");
+scanf("%d%d",&m,&n);
+printf("U ENETERD SIZE OF MATRIX A %d*%d\t",m,n);
+printf("enter size of matrix B\t");
+scanf("%d%d",&p,&q);
+printf("U ENETERD SIZE OF MATRIX A %d*%d\t",m,n);
+printf("ENTER ELEMENTS OF FIRST MATRIX   A  \t");
+for(i=0;i<=m;i++);
+ {
+for(j=0;j<=n;j++);
+{
+scanf("%d",&a[i][j]);
+}
+}
+
+printf("ELEMENTS OF MATRIX A IS AS FOLLOWS\t");
+
+printf("\n");
+
+ for(i=0;i<=n;i++);
+{
+  printf("\n");
+  for(j=0;j<=n;j++)
+  {
+  printf("%d\t",a[i][j]);
+  }
+  }
+
+  printf("\n");
+  printf("enter the elements of matrix B\t");
+ for(i=0;i<=p;i++)
+{
+ for(j=0;j<=q;j++)
+ {
+ scanf("%d",&b[i][j]);
+ }
+ }
+printf("ELEMENTS OF MATRIX B IS AS FOLLOWS");
+ for(i=0;i<=p;i++);
+{
+ for(j=0;j<=q;j++)
+{
+ printf("%d\t",a[i][j]);
+ }
+ }
+  for(i=0;i<=p;i++);
+  {
+ for(j=0;j<=q;j++)
+{
+     c[i][j]=0;
+
+ for(k=0;k<=m;k++)
+{
+c[i][j]=c[i][j]+a[i][k]*b[k][i];
+}
+}
+}
+printf("\n");
+printf("product of matrix is \n");
+for(i=0;i<=m;i++);
+{
+printf("\n");
+for(j=0;j<=q;j++)//c(m*q)
+{
+printf("%d\t",c[i][j]);
+}
+}
+
+getch();
+}

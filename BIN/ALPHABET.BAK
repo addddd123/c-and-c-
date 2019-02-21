@@ -1,0 +1,7 @@
+#include<stdio.h>
+int main()
+{
+	int i;o
+	for(i=0;i<Z;i++)
+	printf("%d",i);
+}

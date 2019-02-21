@@ -1,0 +1,30 @@
+#include<conio.h>
+#include<iostream.h>
+
+class adnan
+{
+int id;
+char name[10];
+public:
+void identity()
+{
+cout<<"\n enter name and id\n";
+cin>>name>>id;
+}
+void display()
+{
+cout<<"\n u enterd name and id\t"<< name<<"  "<< id;
+}
+}a;
+void main()
+{
+int i=0,j=0;
+clrscr();
+for(i=0;i<4;i++)
+
+a.identity();
+for(j=0;j<4;j++);
+a.display();
+
+getch();
+}

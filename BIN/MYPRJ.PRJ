@@ -1,0 +1,15 @@
+#include<conio.h>
+#include<stdio.h>
+#include "GRAPH.H"
+#include"ascii.h"
+#include "def.h"
+
+
+void main()
+{
+clrscr();
+graph();
+menu();
+
+getch();
+}

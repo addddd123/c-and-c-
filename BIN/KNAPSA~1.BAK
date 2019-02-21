@@ -1,0 +1,35 @@
+#include<iostream.h>
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+{
+	float w[7]={2,3,5,7,1,4,1},p[7]={10,5,15,7,6,18,3};
+	float pw[6]={0}; float cap=15;
+	clrscr();
+	for(int i=0;i<7;i++)
+	{
+		pw[i]=p[i]/w[i];
+	}
+	 int h=pw[0],f=0;i=0;  float save[7]={0};
+	while(i<7)
+	{
+	for(f=0;f<7;f++)
+	{
+	   if(pw[f]>pw[0])
+	   {
+	   h=pw[f];
+
+	   }
+	   if(h!=save[--i])
+	    {
+	    if(cap>=0)
+	    save[i]=15-h;
+	     }
+	     }
+	}
+
+
+
+	 return(0);
+}

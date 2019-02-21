@@ -1,0 +1,6 @@
+void main()
+{
+ int i=-2;      clrscr();
+ printf("%d",i);
+ getchar();
+}

@@ -1,0 +1,30 @@
+#include<iostream.h>
+#include<conio.h>
+
+class ac
+{
+	private:
+		char name[10];
+		int acno;
+		float bal;
+	public:
+		void read()
+		{
+			cout<<"name\n";
+			cin>> name;
+			cout<<acno"\n";
+			cin>>acno;
+			cout<<"bal\n";
+			cin>>bal;
+		}
+		friend showbal(ac a)
+		{
+			cout<<" balance of ac ."<<a.acno<<" is "<<a.bal;
+		}
+		int main()
+		{
+			ac k;
+			k.read();
+			showbal(k);
+			getch();
+		}
